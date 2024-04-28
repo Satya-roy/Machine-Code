@@ -5,3 +5,4 @@ import model.ElevatorCar;
 public interface ElevatorAssignmentStrategy {
     public ElevatorCar getElevator();
 }
+
