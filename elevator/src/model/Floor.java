@@ -1,12 +1,17 @@
 package model;
 
+import model.buttonPanel.ButtonPanel;
+
 public class Floor {
     int floorId;
-    ButtonPannel buttonPannel;
+    ButtonPanel buttonPanel;
 
-    public Floor(int floorId, ButtonPannel buttonPannel) {
+    public Floor(int floorId, ButtonPanel buttonPanel) {
         this.floorId = floorId;
-        this.buttonPannel = buttonPannel;
+        this.buttonPanel = buttonPanel;
     }
-    
+
+    public int getFloorId() {
+        return floorId;
+    }
 }
