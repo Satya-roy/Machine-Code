@@ -1,6 +1,7 @@
 package model;
 
 import model.buttonPanel.ButtonPanel;
+import model.request.Request;
 
 public class ElevatorCar {
     private final int elevatorId;
@@ -31,5 +32,13 @@ public class ElevatorCar {
 
     public Direction getDirection() {
         return direction;
+    }
+
+    public void call(Request request) {
+        if(request.getFloor() == floor.getFloorId()) {
+            door.open();
+        } else {
+            //TODO: move to the floor
+        }
     }
 }
