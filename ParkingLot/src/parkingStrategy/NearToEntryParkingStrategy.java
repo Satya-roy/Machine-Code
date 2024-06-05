@@ -7,7 +7,7 @@ import vehicle.VehicleType;
 
 import java.util.List;
 
-public class FourWheelerParkingStrategy implements ParkingStrategy{
+public class NearToEntryParkingStrategy implements ParkingStrategy{
     @Override
     public ParkingSpot findParkingSpot(List<ParkingSpot> parkingSpotList) {
         return new FourWheelerSpot(1, false, new Vehicle(1, VehicleType.TWO_WHEELER), 100);

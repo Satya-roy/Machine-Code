@@ -2,14 +2,14 @@ package parkingSpotManager;
 
 import parkingSpot.ParkingSpot;
 import parkingStrategy.ParkingStrategy;
-import parkingStrategy.TwoWheelerParkingStrategy;
+import parkingStrategy.NearToExitParkingStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TwoWheelerParkingSpotManager extends ParkingSpotManager {
     public TwoWheelerParkingSpotManager(ParkingStrategy parkingStrategy) {
-        super(new TwoWheelerParkingStrategy());
+        super(new NearToExitParkingStrategy());
     }
 
     List<ParkingSpot> twoWheelerParkingSpotList = new ArrayList<>();

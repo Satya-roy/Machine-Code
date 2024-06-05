@@ -1,7 +1,7 @@
 package parkingSpotManager;
 
 import parkingSpot.ParkingSpot;
-import parkingStrategy.FourWheelerParkingStrategy;
+import parkingStrategy.NearToEntryParkingStrategy;
 import parkingStrategy.ParkingStrategy;
 
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ public class FourWheelerParkingSpotManager extends ParkingSpotManager{
     List<ParkingSpot> fourWheelerParkingSpotList = new ArrayList<>();
 
     FourWheelerParkingSpotManager(ParkingStrategy parkingStrategy) {
-        super(new FourWheelerParkingStrategy());
+        super(new NearToEntryParkingStrategy());
     }
 
     //TODO : four wheeler parking strategy
