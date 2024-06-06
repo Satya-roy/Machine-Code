@@ -1,6 +1,8 @@
 package costComputation;
 
-public class HourlyPricingStrategy implements PricingStrategy{
+import costComputation.pricingStrategy.PricingStrategy;
+
+public class HourlyPricingStrategy implements PricingStrategy {
     @Override
     public int pricing() {
         //TODO : implement pricing

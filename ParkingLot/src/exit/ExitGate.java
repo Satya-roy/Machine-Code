@@ -1,7 +1,7 @@
 package exit;
 
 import costComputation.CostComputation;
-import costComputation.TwoWheelerCostComputation;
+import costComputation.pricingStrategy.TwoWheelerCostComputation;
 import parkingSpot.ParkingSpot;
 import parkingSpotManager.ParkingSpotManager;
 import ticket.Ticket;
@@ -23,5 +23,10 @@ public class ExitGate {
         //TODO : calculate cost of parking by creating costComputation object by vehicle type strategy by Vehicle Type
         CostComputation costComputation = new TwoWheelerCostComputation();
         return costComputation.calculateCost(ticket.getEntryTime());
+    }
+
+    // TODO : similar to calculate cost, use payment Strategy class to create cash card or UPI payement
+    public void paymentMode() {
+
     }
 }

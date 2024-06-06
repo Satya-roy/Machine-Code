@@ -1,4 +1,4 @@
-package costComputation;
+package costComputation.pricingStrategy;
 
 public class MinutePricingStrategy implements PricingStrategy{
     @Override
