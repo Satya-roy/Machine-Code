@@ -1,4 +1,4 @@
-package costComputation;
+package costComputation.pricingStrategy;
 
 import costComputation.pricingStrategy.PricingStrategy;
 

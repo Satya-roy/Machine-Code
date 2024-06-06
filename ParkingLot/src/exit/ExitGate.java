@@ -1,10 +1,12 @@
 package exit;
 
 import costComputation.CostComputation;
-import costComputation.pricingStrategy.TwoWheelerCostComputation;
+import costComputation.CostComputationFactory;
+import costComputation.TwoWheelerCostComputation;
 import parkingSpot.ParkingSpot;
 import parkingSpotManager.ParkingSpotManager;
 import ticket.Ticket;
+import vehicle.VehicleType;
 
 public class ExitGate {
     ParkingSpotManager parkingSpotManager;
@@ -22,7 +24,7 @@ public class ExitGate {
     public int calculateCost(Ticket ticket) {
         //TODO : calculate cost of parking by creating costComputation object by vehicle type strategy by Vehicle Type
         // if(ticket.getVehicle().getType == VehicleType.TWO_WHEELER)
-        CostComputation costComputation = new TwoWheelerCostComputation();
+        CostComputation costComputation = CostComputationFactory.getCostComputation(VehicleType.TWO_WHEELER);
         return costComputation.calculateCost(ticket.getEntryTime());
     }
 

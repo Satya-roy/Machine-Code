@@ -1,7 +1,6 @@
-package costComputation.pricingStrategy;
+package costComputation;
 
-import costComputation.CostComputation;
-import costComputation.HourlyPricingStrategy;
+import costComputation.pricingStrategy.HourlyPricingStrategy;
 
 public class TwoWheelerCostComputation extends CostComputation {
     public TwoWheelerCostComputation() {
