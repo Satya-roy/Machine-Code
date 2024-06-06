@@ -21,6 +21,7 @@ public class ExitGate {
 
     public int calculateCost(Ticket ticket) {
         //TODO : calculate cost of parking by creating costComputation object by vehicle type strategy by Vehicle Type
+        // if(ticket.getVehicle().getType == VehicleType.TWO_WHEELER)
         CostComputation costComputation = new TwoWheelerCostComputation();
         return costComputation.calculateCost(ticket.getEntryTime());
     }
