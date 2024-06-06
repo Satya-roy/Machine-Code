@@ -2,6 +2,7 @@ package parkingSpotManager;
 
 import parkingSpot.ParkingSpot;
 import parkingStrategy.ParkingStrategy;
+import vehicle.Vehicle;
 
 
 public abstract class ParkingSpotManager {
@@ -11,6 +12,6 @@ public abstract class ParkingSpotManager {
     }
 
     public abstract ParkingSpot findParkingSpot();
-    public abstract void parkVehicle();
+    public abstract void parkVehicle(ParkingSpot parkingSpot, Vehicle vehicle);
     public abstract void removeVehicle();
 }

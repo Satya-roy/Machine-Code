@@ -3,6 +3,7 @@ package parkingSpotManager;
 import parkingSpot.ParkingSpot;
 import parkingStrategy.ParkingStrategy;
 import parkingStrategy.NearToExitParkingStrategy;
+import vehicle.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,8 +22,9 @@ public class TwoWheelerParkingSpotManager extends ParkingSpotManager {
     }
 
     @Override
-    public void parkVehicle() {
-
+    public void parkVehicle(ParkingSpot parkingSpot, Vehicle vehicle) {
+        parkingSpot.setEmpty(false);
+        parkingSpot.setVehicle(vehicle);
     }
 
     @Override

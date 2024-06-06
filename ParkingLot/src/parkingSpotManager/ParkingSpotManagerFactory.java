@@ -5,7 +5,6 @@ import parkingStrategy.NearToEntryParkingStrategy;
 import vehicle.VehicleType;
 
 public class ParkingSpotManagerFactory {
-    private ParkingSpotManagerFactory() {};
 
     public static ParkingSpotManager getParkingSpotManager(VehicleType type) {
         return switch (type) {

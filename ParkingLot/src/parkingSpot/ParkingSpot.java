@@ -19,4 +19,20 @@ public abstract class ParkingSpot {
     }
 
     public abstract int price();
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setEmpty(boolean empty) {
+        isEmpty = empty;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
 }
