@@ -2,7 +2,6 @@ package exit;
 
 import costComputation.CostComputation;
 import costComputation.CostComputationFactory;
-import costComputation.TwoWheelerCostComputation;
 import parkingSpot.ParkingSpot;
 import parkingSpotManager.ParkingSpotManager;
 import ticket.Ticket;
